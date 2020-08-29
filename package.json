@@ -1,0 +1,44 @@
+{
+  "name": "firestore-entity-framework",
+  "version": "0.0.0",
+  "description": "operate firestore data like entity framework",
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src/*",
+    "lint:fix": "eslint --fix src/*" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/szkrkr/firestore-entity-framework.git"
+  },
+  "author": "szkrkr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/szkrkr/firestore-entity-framework/issues"
+  },
+  "homepage": "https://github.com/szkrkr/firestore-entity-framework#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.10.1",
+    "@typescript-eslint/parser": "^3.10.1",
+    "eslint": "^7.7.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.1.1",
+    "ts-loader": "^8.0.3",
+    "typescript": "^4.0.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "firebase": "^7.19.1"
+  },
+  "publishConfig": { 
+    "registry": "https://npm.pkg.github.com/" 
+  }
+}
