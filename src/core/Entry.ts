@@ -44,7 +44,7 @@ export default class Entry<TEntity extends IEntity> implements IEntry<TEntity> {
     if (_entry.state === EntityState.Added) {
       return _entry;
     }
-    _entry.state = EntityState.Mofified;
+    _entry.state = EntityState.Modified;
 
     return _entry;
   };
@@ -100,7 +100,7 @@ export default class Entry<TEntity extends IEntity> implements IEntry<TEntity> {
     }
     if (
       _entry.state === EntityState.Deleted ||
-      _entry.state === EntityState.Mofified
+      _entry.state === EntityState.Modified
     ) {
       _entry.state = EntityState.Unchanged;
       if (_entry.original) {

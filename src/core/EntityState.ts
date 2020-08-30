@@ -1,6 +1,6 @@
 enum EntityState {
   Unchanged,
-  Mofified,
+  Modified,
   Added,
   Deleted,
 }

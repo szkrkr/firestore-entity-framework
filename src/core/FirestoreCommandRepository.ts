@@ -27,7 +27,7 @@ export default abstract class FirestoreCommandRepository<
         case EntityState.Unchanged:
           break;
         case EntityState.Added:
-        case EntityState.Mofified:
+        case EntityState.Modified:
           batch.set(this.reference.doc(entries[i].id), {
             ...entries[i].entity,
           });
